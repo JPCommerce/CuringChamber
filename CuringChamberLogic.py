@@ -102,11 +102,11 @@ while (count < 10):
     t = get_temp()
     h = get_humidity()
     print(('Date/Time: ', dmt))
-    print(('Temp: {0:0.1f}*C Humidity: {1:0.1f}%'.format(t, h)))
+    print(('Temp: {0:0.1f}*f Humidity: {1:0.1f}%'.format(t, h)))
 
     # check for high temp and take action if required.
     if t > 56:
-        print(('High temp condition exists: {0:0.1f}'.format(t)))
+        print(('High temp condition exists: {0:0.1f}*f'.format(t)))
         if statusCooler is False:
             if statusHeater is True:
                 print('Cooler already on and heater off, no action taken.')
@@ -126,7 +126,7 @@ while (count < 10):
 
     # check for low temp and take action if required
     if t < 50:
-        print(('Low temp condition exist: {0:0.1f}'.format(t)))
+        print(('Low temp condition exist: {0:0.1f}*f'.format(t)))
         if statusCooler is True:
             print('Cooler already off, no action taken.')
         else:
@@ -153,7 +153,7 @@ while (count < 10):
 
     # check for high humidity and take action if required
     if h > 72:
-        print(('High humidity condition exists: {0:0.1f}'.format(h)))
+        print(('High humidity condition exists: {0:0.1f}%'.format(h)))
         if statusDehumidifier is False:
             if statusHumidifier is True:
                 print('dehumidifier active/humidifier off, no action taken.')
@@ -173,7 +173,7 @@ while (count < 10):
 
     # check for low humidity and take action if required
     if h < 68:
-        print(('Low humidity condition exists: {0:0.1f}'.format(h)))
+        print(('Low humidity condition exists: {0:0.1f}%'.format(h)))
         if statusDehumidifier is True:
             print('dehumidifier already off.')
         else:
