@@ -8,4 +8,4 @@ limit my remote accessibility. I decided to base my DIY system on a raspberry pi
 experience with any of of these technologies prior to starting this project but look forward to discovery.  So far I have what I believe is a
 viable python script for the use of controlling 4 relay panel that will in-turn control heater, humidifier, dehumidifier, and a wine cooler. I 
 designed the PCB boards using the "Fritzing" app and exportedthe design to a company called Osh Park in california to have the boards built. 
-The current boards on git are of the most recent design and have had 3 previous versions. Please let me know if you have any questions.
+The current boards on git are of the most recent design and have had 3 previous versions. 
